@@ -18,6 +18,7 @@ public class EmployeeController {
 	
 	@PostMapping("/insertEmployeeDetailsByMapSql")
 	public Boolean insertEmployeeDetailsByMapSql(@RequestBody List<EmployeeReq> employeeReq) {
+		//System.out.println("helloworld");
 		
 		return employeeService.insertEmployeeDetailsByMapSql(employeeReq);
 	}
